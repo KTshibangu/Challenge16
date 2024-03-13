@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.top h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: hsl(234, 12%, 34%);
+}
+
+
+.top h1 {
+    margin-top: -5px;
+    font-size: 30px;
+    color: hsl(234, 12%, 34%, 0.9);
+}
+
+
+.top p {
+    margin-top: 10px;
+    font-size: 13px;
+    width: 60%;
+    text-align: center;
+    line-height: 20px;
+    color: hsl(234, 12%, 34%, 0.6);
+}
+
+
+.bottom {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+
+.role-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+
+.card {
+    width: 360px;
+    padding: 30px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+
+.color {
+    width: 99%;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.cyan {
+    background: hsl(180, 62%, 55%);
+}
+
+
+.red {
+    background: hsl(0, 78%, 62%);
+}
+
+
+.orange {
+    background: hsl(34, 97%, 64%);
+}
+
+
+.blue {
+    background: hsl(212, 86%, 64%);
+}
+
+
+.content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: hsl(234, 12%, 34%);
+}
+
+
+.content p {
+    font-size: 14px;
+    color: hsl(234, 12%, 34%, 0.6);
+    margin-bottom: 48px;
+}
+
+
+.content img {
+    float: right;
+}
+
+
+.role-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+.role-3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+
+.role-4 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .container {
+        min-height: 100vh;
+        margin: 30px 0;
+    }
+
+
+    .top {
+        margin-top: 80px;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .top h2 {
+        font-size: 24px;
+    }
+
+
+    .top h1 {
+        font-size: 24px;
+        margin-top: 2px;
+    }
+
+
+    .top p {
+        margin-top: 15px;
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+        line-height: 22px;
+    }
+
+
+    .bottom {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .card {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+{}
